@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap'); /* Fonte cursiva para destacar o estilo profana */
+
+:root {
+    --vermelho-profano: #efdc47; 
+    --dourado: #e6b30b; 
+    --preto-fundo: #1A1A1A; 
+    --branco-contraste: #F5F5F5; 
+    --alto-contraste-fundo: #777673;
+    --alto-contraste-texto: rgb(11, 11, 12);
+    --alto-contraste-link: #f4d460;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--preto-fundo);
+    color: var(--branco-contraste);
+    line-height: 1.6;
+}
+
+
+header {
+    background:  var(--vermelho-profano);
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.nav-link {
+    color: var(--dourado);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--vermelho-profano);
+    transform: scale(1.1);
+}
+
+
+.inicio-fundo {
+    background-image: url(img/papel-digital-carrossel-1.jpg); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 1200px;
+    height: 550px;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(166, 17, 17, 0.5); 
+    animation: pulse 3s infinite ease-in-out; 
+}
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+
+.img-inicio {
+    position: absolute;
+    right: 1rem;
+    top: 12rem;
+    width: 35rem;
+    height: auto;
+    max-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.img-inicio:hover {
+    transform: translateY(-10px); 
+}
+
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    max-width: 50%;
+}
+
+
+.botao-inicio {
+    background-color: var(--vermelho-profano);
+    border-radius: 25px;
+    border: 2px solid var(--dourado);
+    width: 13em;
+    height: 3em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+    color: var(--branco-contraste);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.botao-inicio:hover {
+    background-color: var(--dourado);
+    color: var(--roxo-escuro);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(212, 160, 23, 0.7);
+}
+
+/* Título com sombra estilizada */
+.display-4 {
+    font-family: 'Lemon', serif;
+    text-shadow: -4px 4px var(--dourado);
+    font-size: 3.5rem;
+    color: var(--branco-contraste);
+}
+
+/* Seção tropicalia com fundo artístico */
+#tropicalia {
+    position: relative;
+    padding: 5rem 0;
+    margin: 3rem 0;
+    background: url(img/039bfb98547756d2f159286c9b51fa68-cor-do-carrossel-de-carnaval.webp) top right no-repeat,
+                url(img/039bfb98547756d2f159286c9b51fa68-cor-do-carrossel-de-carnaval.webp) bottom left no-repeat,
+                linear-gradient(to bottom, var(--roxo-escuro), var(--preto-fundo));
+    background-size: 150px 150px, 150px 150px, cover;
+}
+
+
+#Carrosel .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    color: var(--dourado);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+#galeria {
+    background: linear-gradient(45deg, var(--vermelho-profano), var(--roxo-escuro));
+    padding: 4rem 0;
+}
+
+
+.fundo-galeria {
+    background: url(img/039bfb98547756d2f159286c9b51fa68-cor-do-carrossel-de-carnaval.webp) bottom right no-repeat;
+    background-size: 150px 150px;
+}
+
+/* Seção de contato com fundo dinâmico */
+#contato {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+    position: relative;
+}
+
+/* Formulário com estilo profano */
+.formulario {
+    background-color: rgba(227, 103, 50, 0.9); /* Roxo escuro com transparência */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(166, 17, 17, 0.5);
+    color: var(--branco-contraste);
+    font-weight: 600;
+}
+
+/* Botão do formulário */
+.formulario button {
+    background-color: var(--dourado);
+    border: 2px solid var(--vermelho-profano);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--roxo-escuro);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formulario button:hover {
+    background-color: var(--vermelho-profano);
+    color: var(--branco-contraste);
+    transform: scale(1.05);
+}
+
+/* Inputs do formulário */
+.form-control {
+    background-color: rgba(212, 160, 23, 0.2); /* Dourado com transparência */
+    border: 1px solid var(--dourado);
+    color: var(--branco-contraste);
+    font-weight: 500;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--vermelho-profano);
+    box-shadow: 0 0 8px rgba(166, 17, 17, 0.5);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .inicio-fundo {
+        height: 450px;
+        border-radius: 20px;
+        padding: 1.5rem;
+    }
+
+    .img-inicio {
+        width: 20rem;
+        top: 10rem;
+    }
+
+    .esquerda-conteudo {
+        max-width: 100%;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .botao-inicio {
+        width: 10em;
+        height: 2.5em;
+    }
+}
+
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top: 10px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+
+.apresenta-lista{
+    display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste #tropicalia{
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste .fundo-galeria{
+    background: none;
+}
